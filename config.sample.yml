@@ -1,0 +1,10 @@
+# Cobot Auto-Confirm Script Configuration File
+# Sample Version
+
+cobot_subdomain: convergenj
+consumer:
+  token: CONSUMER_TOKEN
+  secret: CONSUMER_SECRET
+access:
+  token: ACCESS_TOKEN
+  secret: ACCESS_SECRET
