@@ -9,6 +9,23 @@ This script will connect to the Cobot OAuth API on behalf of a user (with admin 
 
 I wrote this script for [Converge Coworking](http://www.convergenj.com), an awesome coworking space located in Union, NJ on the campus of Kean University (shameless plug). We needed a way to automatically confirm new coworkers who sign up for accounts so they can check-in immediately. If you use Cobot to manage your coworking space, I hope you find this script useful. If you don't use Cobot, you really should! It handles signup, billing, memberships and addons, as well as perks like conference room booking. It's a one stop shop for coworking space administration. That was another shameless plug, by the way, but I am not affiliated with Cobot in any way.
 
+## Usage
+
+The output of the `--help` flag pretty much says it all:
+
+	Cobot Membership Auto-Confirm Script
+	Usage: auto-confirm.rb [options]
+
+	Options:
+			-c, --config=CONF_FILE           Get OAuth configuration from specified YAML file. CLI flags take precedence.
+			-t, --consumer-token=TOKEN       OAuth Consumer Token
+			-s, --consumer-secret=SECRET     OAuth Consumer Secret
+			-T, --access-token=TOKEN         OAuth Access Token
+			-S, --access-secret=SECRET       OAuth Access Secret
+			-d, --cobot-subdomain=SUBDOMAIN  Cobot subdomain (i.e. "convergenj")
+			-h, --help                       Display usage information
+	
+
 ## Authorizing This Script
 
 OAuth is an elegant little dance, in which an application and web service exchange sets of keys. The grand purpose of the dance is for the web service to grant an application access to your data without the application needing to know your username and password. In the case of interactive web apps, it's completely automated; but ironically enough, since our script is completely automated you'll need to do some of the steps manually. __You only need to do this once. Once you've gotten your Access Token and Access Secret, they can be used indefinitely.__
@@ -46,9 +63,6 @@ Test your Access Token by making a request to the Cobot API:
 As long as it returns a class of `Net::HTTPOK`, you're golden.
 
 You've just exchanged your Request Token and Secret for an Access Token and Access Secret. Copy these values and save them somewhere. You now have everything you need to run the auto confirm script.
-
-## Usage
-Usage + Configuration info.
 
 ## License
 This script is released under the terms of the GNU General Public License v3.0. See [LICENSE](https://github.com/mikedamage/cobot-auto-confirm/blob/master/LICENSE) for more details.
