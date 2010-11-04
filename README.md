@@ -40,6 +40,11 @@ Back in IRB, run the following code:
 	> access_token.secret
 	=> "ACCESS_SECRET"
 
+Test your Access Token by making a request to the Cobot API:
+	> user = access_token.get('/api/user')
+	=> #<Net::HTTPOK 200 OK readbody=true>
+As long as it returns a class of `Net::HTTPOK`, you're golden.
+
 You've just exchanged your Request Token and Secret for an Access Token and Access Secret. Copy these values and save them somewhere. You now have everything you need to run the auto confirm script.
 
 ## Usage
