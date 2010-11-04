@@ -29,6 +29,12 @@ The output of the `--help` flag pretty much says it all:
 
 You can optionally record your OAuth keys and Cobot subdomain in a YAML file and pass it to the script via the `--config` flag. See [config.sample.yml](https://github.com/mikedamage/cobot-auto-confirm/blob/master/config.sample.yml) for an example.
 
+### Running the Script
+
+This script is not a daemon. It could be made into one pretty easily, but I'm simply going to deploy this to one of my web hosting accounts and run it as a Cron job. Here's an example Crontab entry, which runs the script every 15 minutes Monday thru Friday and sends all output to `/dev/null`:
+
+	*/15 * * * 1-5 /home/mike/bin/auto-confirm.rb --config=/home/mike/etc/auto-confirm.yml >> /dev/null 2>&1
+
 ## Authorizing This Script
 
 OAuth is an elegant little dance, in which an application and web service exchange sets of keys. The grand purpose of the dance is for the web service to grant an application access to your data without the application needing to know your username and password. In the case of interactive web apps, it's completely automated; but ironically enough, since our script is completely automated you'll need to do some of the steps manually. __You only need to do this once. Once you've gotten your Access Token and Access Secret, they can be used indefinitely.__
