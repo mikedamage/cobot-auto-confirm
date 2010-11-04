@@ -5,7 +5,7 @@ Copyright (C) 2010 Converge Coworking, LLC
 
 ## Summary
 
-This script will connect to the Cobot OAuth API on behalf of a user (with admin privileges) and run through the list of members, automatically confirming any unconfirmed members. It requires you to obtain an OAuth Access Token and Access Secret from Cobot, which I'll cover in the _Authorizing This Script_ section below.
+This script will connect to the [Cobot](http://www.cobot.me) OAuth API on behalf of a user (with admin privileges) and run through the list of members, automatically confirming any unconfirmed members. It requires you to obtain an OAuth Access Token and Access Secret from Cobot, which I'll cover in the _Authorizing This Script_ section below.
 
 I wrote this script for [Converge Coworking](http://www.convergenj.com), an awesome coworking space located in Union, NJ on the campus of Kean University (shameless plug). We needed a way to automatically confirm new coworkers who sign up for accounts so they can check-in immediately. If you use Cobot to manage your coworking space, I hope you find this script useful. If you don't use Cobot, you really should! It handles signup, billing, memberships and addons, as well as perks like conference room booking. It's a one stop shop for coworking space administration. That was another shameless plug, by the way, but I am not affiliated with Cobot in any way.
 
