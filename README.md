@@ -24,7 +24,10 @@ The output of the `--help` flag pretty much says it all:
 			-S, --access-secret=SECRET       OAuth Access Secret
 			-d, --cobot-subdomain=SUBDOMAIN  Cobot subdomain (i.e. "convergenj")
 			-h, --help                       Display usage information
-	
+
+### config.yml
+
+You can optionally record your OAuth keys and Cobot subdomain in a YAML file and pass it to the script via the `--config` flag. See [config.sample.yml](https://github.com/mikedamage/cobot-auto-confirm/blob/master/config.sample.yml) for an example.
 
 ## Authorizing This Script
 
