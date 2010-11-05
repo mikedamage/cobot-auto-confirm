@@ -44,7 +44,7 @@ Here's a quick and dirty tutorial on obtaining the OAuth keys this script requir
 ### What you need:
 1. A Cobot account with admin privileges
 2. Ruby & RubyGems w/ the OAuth and JSON gems installed
-3. The example PHP callback script, uploaded to your website. (TODO: add PHP callback script to repo)
+3. The example PHP callback script, uploaded to your website.
 
 First you need to register the script with Cobot to get your Consumer Key and Consumer Secret. Login to your cobot account, then visit https://www.cobot.me/oauth_clients/new. Fill in all the required fields - the callback URL is the URL of the PHP callback script. _Note: you don't actually need to use my callback script for this, but you do need to enter something for the callback URL._
 
